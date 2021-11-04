@@ -1,0 +1,25 @@
+{
+  "name": "learning-api",
+  "version": "1.0.0",
+  "description": "learning graphql",
+  "main": "server.js",
+  "author": "Mateus Nascimento <mateus.msnascimento@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "watch": "babel src -d dist --copy-files && node dist/server.js",
+    "dev": "nodemon --transpile-only --inspect --watch src --exec npm run watch"
+  },
+  "dependencies": {
+    "apollo-server": "^3.4.1",
+    "graphql": "^16.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/register": "^7.16.0",
+    "nodemon": "^2.0.14"
+  }
+}

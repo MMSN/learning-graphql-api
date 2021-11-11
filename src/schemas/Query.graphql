@@ -1,0 +1,12 @@
+type Query {
+  productOn: Product
+  ola: String
+  dataCertaString: String
+  dataCerta: Date
+  userOn: User
+  numbersList: [Int!]!
+  getUsers: [User]
+  getUser(id: ID): User
+  getTypes: [Type]
+  getType(id: ID): Type
+}
